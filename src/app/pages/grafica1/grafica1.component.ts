@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class Grafica1Component {
 
+  colors: string[] = ['#6857E6','#FF8576','#6852FF'];
+  titulo: string = 'Alan';
+  data: number[] = [333, 300, 100];
+  labels1: string[] = ['Campo Uno', 'Campo Dos', 'Campo Tres'];
+
+
+
 }
