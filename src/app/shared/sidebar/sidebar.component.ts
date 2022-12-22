@@ -11,14 +11,12 @@ import { UsuarioService } from 'src/app/services/usuario.service';
 })
 export class SidebarComponent {
 
-  menuItems: any[];
 
   usuario!: Usuario;
 
-  constructor( private sidebarService: SidebarService,
+  constructor( public sidebarService: SidebarService,
                private usuarioService: UsuarioService ) { 
-    this.menuItems =  sidebarService.menu;
-    console.log(this.menuItems)
+    // this.menuItems =  sidebarService.menu;
 
     this.usuario = usuarioService.usuario;
   }
